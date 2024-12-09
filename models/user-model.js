@@ -15,7 +15,7 @@ const userSchema = mongoose.Schema(
       required: false,
       get: (avatar) => {
         if (avatar) {
-          return `${process.env.BASE_URL}${avatar}`;
+          return `https://new-back-repo-chi.vercel.app${avatar}`;
         }
         return avatar;
       },
