@@ -82,14 +82,14 @@ class ActivateController {
       try {
         await user.save();
       } catch (err) {
-        console.error("User Save Error:", err);
+        console.log("User Save Error:", err);
         return res.status(500).json({ message: "Failed to update user!" });
       }
 
       // Respond with updated user data
       res.json({ user: new UserDto(user), auth: true });
     } catch (err) {
-      console.error("User Update Error:", err);
+      console.log("User Update Error:", err);
       res.status(500).json({ message: "Something went wrong!" });
     }
   }
