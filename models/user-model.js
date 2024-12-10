@@ -13,12 +13,12 @@ const userSchema = mongoose.Schema(
     avatar: {
       type: String,
       required: false,
-      get: (avatar) => {
-        if (avatar) {
-          return `https://new-back-repo-chi.vercel.app${avatar}`;
-        }
-        return avatar;
-      },
+      // get: (avatar) => {
+      //   if (avatar) {
+      //     return `${avatar}`;
+      //   }
+      //   return avatar;
+      // },
     },
     activated: {
       type: Boolean,
