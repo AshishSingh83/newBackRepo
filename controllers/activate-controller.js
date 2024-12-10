@@ -2,7 +2,6 @@ const sharp = require("sharp");
 const cloudinary = require("cloudinary").v2;
 const userService = require("../services/user-service");
 const UserDto = require("../dtos/user-dto");
-
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
