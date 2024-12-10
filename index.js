@@ -16,7 +16,7 @@ const io = require("socket.io")(server, {
 });
 const corsOption = {
   credentials: true,
-  origin: ["http://localhost:3000"],
+  origin: ["myfrontendb.vercel.app"],
 };
 app.use(cors(corsOption));
 app.use("/storage", express.static("storage"));
